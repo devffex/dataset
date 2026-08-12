@@ -1,1 +1,134 @@
-[]
+{
+  "base_url": "https://cdn.jsdelivr.net/gh/devffex/dataset",
+  "updated_at": "2026-08-12T19:55:24Z",
+  "is_offline": false,
+  "manifest_source": "remote_cdn",
+  "symbols": [
+    {
+      "symbol": "USDJPY",
+      "display_name": "US Dollar / Japanese Yen",
+      "category": "Forex",
+      "description": "Major currency pair USD/JPY",
+      "root_path": "USDJPY/",
+      "timeframes": [
+        {
+          "timeframe": "MN1",
+          "relative_url": "USDJPY/MN1.csv",
+          "expected_checksum_sha256": "a2ed2ec3958c2758c6593abed99f0a5a7e40cd1f4229210443444d5e73678108",
+          "expected_size_bytes": 41049
+        },
+        {
+          "timeframe": "W1",
+          "relative_url": "USDJPY/W1.csv",
+          "expected_checksum_sha256": "3a0aac7d5a49a8ce925b941fc100f92eebf13c10ba3a9214dc2a0e92d6b5bda0",
+          "expected_size_bytes": 175325
+        },
+        {
+          "timeframe": "D1",
+          "relative_url": "USDJPY/D1.csv",
+          "expected_checksum_sha256": "24eb2d4b9e58048b9bb0a9678d517d4b3d9e5650a2594f9cb73db9f31678dd94",
+          "expected_size_bytes": 860893
+        },
+        {
+          "timeframe": "H4",
+          "relative_url": "USDJPY/H4.csv",
+          "expected_checksum_sha256": "2572a07cfdefad055c0090d352bacb84db2d0431f22d8ea35cf80ab3100f805a",
+          "expected_size_bytes": 3552454
+        },
+        {
+          "timeframe": "H1",
+          "relative_url": "USDJPY/H1.csv",
+          "expected_checksum_sha256": "7c80691bbe7ff75ded3a4c5c0ad66314b4bacbc8d5c54e270023cb0758045e18",
+          "expected_size_bytes": 7300481
+        },
+        {
+          "timeframe": "M30",
+          "relative_url": "USDJPY/M30.csv",
+          "expected_checksum_sha256": "afb6f1b219f7de2a9a51ad699418762f99c57823c560957dd02d655b68614aa7",
+          "expected_size_bytes": 7230134
+        },
+        {
+          "timeframe": "M15",
+          "relative_url": "USDJPY/M15.csv",
+          "expected_checksum_sha256": "71b9fef406f7d956fef9f5a597ff42780f697aaef1368ecce5e3dbcb3bf5b858",
+          "expected_size_bytes": 7207072
+        },
+        {
+          "timeframe": "M5",
+          "relative_url": "USDJPY/M5.csv",
+          "expected_checksum_sha256": "48fa84637ae8c46eb932859c7b230a39330274d9426fce7192ed0da509336ca6",
+          "expected_size_bytes": 7179244
+        },
+        {
+          "timeframe": "M1",
+          "relative_url": "USDJPY/M1.csv",
+          "expected_checksum_sha256": "cc795b5037336194590ca0973f6935f625076fc598f4927a145ad36c0545abcc",
+          "expected_size_bytes": 7091820
+        }
+      ]
+    },
+    {
+      "symbol": "EURUSD",
+      "display_name": "Euro / US Dollar",
+      "category": "Forex",
+      "description": "Major currency pair EUR/USD",
+      "root_path": "EURUSD/",
+      "timeframes": [
+        {
+          "timeframe": "MN1",
+          "relative_url": "EURUSD/MN1.csv",
+          "expected_checksum_sha256": "59c952182a6238bcb9b939a149d02834dbf2e5dc3f50810e645948e7a938a506",
+          "expected_size_bytes": 43646
+        },
+        {
+          "timeframe": "W1",
+          "relative_url": "EURUSD/W1.csv",
+          "expected_checksum_sha256": "75cc2021b9fed337b83a3ceb0b135c110a56042f58787f4206132c7d089016b2",
+          "expected_size_bytes": 186646
+        },
+        {
+          "timeframe": "D1",
+          "relative_url": "EURUSD/D1.csv",
+          "expected_checksum_sha256": "6872febe16acfda3700c2c1f27fa8d41f982986fa5ddc47021075f2822a64798",
+          "expected_size_bytes": 910767
+        },
+        {
+          "timeframe": "H4",
+          "relative_url": "EURUSD/H4.csv",
+          "expected_checksum_sha256": "a4e64e902a2920227c46d09b6ad252ecb19ba90b3153537d81ed9c100389ed73",
+          "expected_size_bytes": 3739769
+        },
+        {
+          "timeframe": "H1",
+          "relative_url": "EURUSD/H1.csv",
+          "expected_checksum_sha256": "4def017d9876f4716b7605eaa01ee5f69755fb398beb8bde622c7effe0299fc9",
+          "expected_size_bytes": 7654073
+        },
+        {
+          "timeframe": "M30",
+          "relative_url": "EURUSD/M30.csv",
+          "expected_checksum_sha256": "17e74250e02eaba1f98afeb0cbb9d519a89ae41ca195d903b98d3144c7887a9a",
+          "expected_size_bytes": 7404644
+        },
+        {
+          "timeframe": "M15",
+          "relative_url": "EURUSD/M15.csv",
+          "expected_checksum_sha256": "e5e7770b09f519ac1510c51782bad6fe9842bd7aa7eec38d772b2386c65318bb",
+          "expected_size_bytes": 7347313
+        },
+        {
+          "timeframe": "M5",
+          "relative_url": "EURUSD/M5.csv",
+          "expected_checksum_sha256": "b1bb1262976e4aa09ca9ebb7780db2da737536b54c4f718cbd6b72ead6557a8a",
+          "expected_size_bytes": 7427469
+        },
+        {
+          "timeframe": "M1",
+          "relative_url": "EURUSD/M1.csv",
+          "expected_checksum_sha256": "b90e885ee7b5e6378566c6bdc740394ce20a81ba2bccbba2ff6451e7e3b6f98b",
+          "expected_size_bytes": 7376215
+        }
+      ]
+    }
+  ]
+}
