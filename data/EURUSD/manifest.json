@@ -1,0 +1,64 @@
+{
+  "symbol": "EURUSD",
+  "last_updated": 1787768552,
+  "timeframes": {
+    "M1": {
+      "candle_count": 5000,
+      "start_time": 1787306520,
+      "end_time": 1787779260,
+      "parquet_uploaded": true,
+      "json_uploaded": true,
+      "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/data/EURUSD/M1/history.parquet",
+      "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/data/EURUSD/M1/recent.json"
+    },
+    "M5": {
+      "candle_count": 5000,
+      "start_time": 1785761100,
+      "end_time": 1787779200,
+      "parquet_uploaded": true,
+      "json_uploaded": true,
+      "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/data/EURUSD/M5/history.parquet",
+      "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/data/EURUSD/M5/recent.json"
+    },
+    "M15": {
+      "candle_count": 5000,
+      "start_time": 1781551800,
+      "end_time": 1787778900,
+      "parquet_uploaded": true,
+      "json_uploaded": true,
+      "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/data/EURUSD/M15/history.parquet",
+      "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/data/EURUSD/M15/recent.json"
+    },
+    "M30": {
+      "candle_count": 5000,
+      "start_time": 1775151000,
+      "end_time": 1787778000,
+      "parquet_uploaded": true,
+      "json_uploaded": true,
+      "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/data/EURUSD/M30/history.parquet",
+      "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/data/EURUSD/M30/recent.json"
+    },
+    "H1": {
+      "candle_count": 5000,
+      "start_time": 1762326000,
+      "end_time": 1787778000,
+      "parquet_uploaded": true,
+      "json_uploaded": true,
+      "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/data/EURUSD/H1/history.parquet",
+      "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/data/EURUSD/H1/recent.json"
+    },
+    "H4": {
+      "candle_count": 5000,
+      "start_time": 1686211200,
+      "end_time": 1787774400,
+      "parquet_uploaded": true,
+      "json_uploaded": true,
+      "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/data/EURUSD/H4/history.parquet",
+      "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/data/EURUSD/H4/recent.json"
+    },
+    "D1": {
+      "count": 0,
+      "status": "empty"
+    }
+  }
+}
