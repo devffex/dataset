@@ -1,19 +1,19 @@
 # Open Financial Market Datasets (`devffex/dataset`)
 
-This repository serves as the official, globally distributed open market dataset repository powered by the **Savisor Market Node**. It hosts normalized, institutional-grade historical tick and bar datasets (OHLCV + Volume) across standard timeframe partitions (`M1` to `MN1`).
+This repository is an open public repository of historical financial market price datasets (OHLCV + Volume) across multiple asset symbols and timeframe partitions (`M1`, `M5`, `M15`, `M30`, `H1`, `H4`, `D1`, `W1`, `MN1`).
 
-All datasets are compressed with **Apache Parquet (Snappy)** for high-throughput quantitative backtesting and **Compact JSON** for sub-millisecond web chart hydration. Datasets are distributed globally through the **jsDelivr Multi-CDN** (Cloudflare + Fastly edge networks) with **zero egress costs**.
+All datasets are published in **Apache Parquet (Snappy)** for fast quantitative backtesting and **Compact JSON** for frontend charting. Datasets are served globally via the **jsDelivr Multi-CDN** (Cloudflare + Fastly edge networks) with **zero egress costs**.
 
 ---
 
 ## 1. Directory Structure
 
-Datasets are organized directly at the root of the repository by asset symbol and timeframe:
+Datasets are structured directly by asset symbol and timeframe:
 
 ```text
 devffex/dataset/
 ├── symbols.json                   # Global catalog of all tracked symbols and metadata
-├── <SYMBOL>/                      # Asset root partition (e.g., EURUSD/, USDJPY/, BTCUSD/)
+├── <SYMBOL>/                      # Asset root partition (e.g., EURUSD/, USDJPY/, GBPUSD/)
 │   ├── manifest.json              # Timeframe index, row counts, and date boundaries
 │   ├── M1/
 │   │   ├── history.parquet        # Complete historical dataset (Snappy Parquet)
@@ -35,7 +35,7 @@ devffex/dataset/
 
 ## 2. Global CDN Endpoints
 
-Datasets can be accessed directly over HTTP without cloning the repository:
+All files can be accessed directly over HTTP:
 
 | Asset Type | Global Multi-CDN URL (Recommended) | Raw GitHub URL (Fallback) |
 |---|---|---|
@@ -44,7 +44,7 @@ Datasets can be accessed directly over HTTP without cloning the repository:
 | **Asset Manifest** | `https://cdn.jsdelivr.net/gh/devffex/dataset@main/<SYMBOL>/manifest.json` | `https://raw.githubusercontent.com/devffex/dataset/main/<SYMBOL>/manifest.json` |
 | **Catalog Index** | `https://cdn.jsdelivr.net/gh/devffex/dataset@main/symbols.json` | `https://raw.githubusercontent.com/devffex/dataset/main/symbols.json` |
 
-*Example for EURUSD 1-Hour Parquet*:  
+*Direct URL Example*:  
 👉 `https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/H1/history.parquet`
 
 ---
@@ -61,10 +61,10 @@ Compressed using the **Snappy** codec with sorted Unix timestamps and dictionary
 | `high` | `float64` | Bar maximum price. |
 | `low` | `float64` | Bar minimum price. |
 | `close` | `float64` | Bar closing price. |
-| `tick_volume` | `int64` | Number of trade ticks received during the period. |
+| `tick_volume` | `int64` | Trade tick count / volume during the bar interval. |
 
 ### B. `recent.json` (Compact Array-of-Arrays)
-Optimized for ultra-fast JSON parsing and low network payload ($<20\text{ KB}$ for 500 bars):
+Optimized for rapid JSON decoding and minimal payload size ($<20\text{ KB}$ for 500 bars):
 
 ```json
 [
@@ -78,9 +78,9 @@ Optimized for ultra-fast JSON parsing and low network payload ($<20\text{ KB}$ f
 
 ## 4. Client Integration Recipes
 
-### Recipe 1: Python / Polars (Blazing Fast Streaming Ingest)
+### Recipe 1: Python / Polars (Fast Streaming Ingest)
 
-Read Parquet files directly from the CDN into a Polars DataFrame without saving to disk:
+Read Parquet files directly from the CDN into a Polars DataFrame without saving locally:
 
 ```python
 import polars as pl
@@ -102,7 +102,7 @@ print(df.tail(5))
 
 ### Recipe 2: DuckDB (Serverless SQL Queries over HTTP)
 
-Query and filter massive historical datasets without downloading the file:
+Run analytical SQL queries directly against remote Parquet files without downloading them:
 
 ```python
 import duckdb
@@ -124,7 +124,7 @@ print(df.head(10))
 
 ---
 
-### Recipe 3: Python / Pandas & Indicator Calculation
+### Recipe 3: Python / Pandas & Technical Indicators
 
 ```python
 import pandas as pd
@@ -181,7 +181,7 @@ export class MarketChartHydrator {
 
 ### Recipe 5: CLI / Shell Download & Sync
 
-Download or mirror specific datasets locally using `curl` or `wget`:
+Download specific datasets locally using `curl` or `wget`:
 
 ```bash
 # Download EURUSD H1 Parquet file
@@ -199,7 +199,7 @@ curl -fLo EURUSD_manifest.json \
 
 ---
 
-### Recipe 6: Python Batch Downloader for Multiple Symbols
+### Recipe 6: Python Multi-Symbol Batch Downloader
 
 ```python
 import os
@@ -234,16 +234,7 @@ if __name__ == "__main__":
 
 ---
 
-## 5. Automated Data Ingestion & Live Updates
+## 5. License & Disclaimer
 
-Datasets in this repository are managed autonomously by the **Savisor Market Node**:
-1. **Real-time Candle 0 Aggregation**: Ticks from broker trade servers are aggregated into in-flight bars.
-2. **Rollover Trigger**: When a period closes (e.g. at `:00` seconds for `M1` or `:00` minutes for `H1`), the node finalizes the candle, merges it with historical Parquet partitions, and pushes an atomic commit to this repository.
-3. **Instant Edge Cache Invalidation**: After every commit, the node automatically issues a purge request to the jsDelivr Purge API (`https://purge.jsdelivr.net/gh/devffex/dataset@main/...`), guaranteeing global cache freshness across all CDN edge nodes within seconds.
-
----
-
-## 6. License & Disclaimer
-
-* **Disclaimer**: All financial datasets provided in this repository are intended for informational, research, machine learning, and algorithmic trading backtesting purposes.
+* **Disclaimer**: All financial datasets provided in this repository are for informational, research, machine learning, and algorithmic trading backtesting purposes.
 * **License**: MIT License. Free for both open-source and commercial use.
