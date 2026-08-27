@@ -1,0 +1,59 @@
+{
+  "symbol": "EURUSD",
+  "last_updated": 1787845528,
+  "timeframes": {
+    "M1": {
+      "candle_count": 48876,
+      "records_ingested": 50000,
+      "chunks_flushed": 2,
+      "parquet_uploaded": true,
+      "json_uploaded": true,
+      "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/M1/history.parquet",
+      "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/M1/recent.json"
+    },
+    "M5": {
+      "candle_count": 50000,
+      "records_ingested": 50000,
+      "chunks_flushed": 2,
+      "parquet_uploaded": true,
+      "json_uploaded": true,
+      "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/M5/history.parquet",
+      "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/M5/recent.json"
+    },
+    "M15": {
+      "candle_count": 50000,
+      "records_ingested": 50000,
+      "chunks_flushed": 2,
+      "parquet_uploaded": true,
+      "json_uploaded": true,
+      "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/M15/history.parquet",
+      "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/M15/recent.json"
+    },
+    "M30": {
+      "candle_count": 50000,
+      "records_ingested": 50000,
+      "chunks_flushed": 2,
+      "parquet_uploaded": true,
+      "json_uploaded": true,
+      "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/M30/history.parquet",
+      "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/M30/recent.json"
+    },
+    "H1": {
+      "candle_count": 25000,
+      "records_ingested": 25000,
+      "chunks_flushed": 1,
+      "parquet_uploaded": true,
+      "json_uploaded": true,
+      "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/H1/history.parquet",
+      "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/H1/recent.json"
+    },
+    "H4": {
+      "count": 0,
+      "status": "empty"
+    },
+    "D1": {
+      "count": 0,
+      "status": "empty"
+    }
+  }
+}
