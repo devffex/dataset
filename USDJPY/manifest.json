@@ -1,9 +1,9 @@
 {
   "symbol": "USDJPY",
-  "last_updated": 1787847245,
+  "last_updated": 1787847419,
   "timeframes": {
     "M1": {
-      "candle_count": 99983,
+      "candle_count": 99999,
       "records_ingested": 100000,
       "chunks_flushed": 4,
       "parquet_uploaded": true,
@@ -12,7 +12,7 @@
       "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/M1/recent.json"
     },
     "M5": {
-      "candle_count": 100000,
+      "candle_count": 100002,
       "records_ingested": 100000,
       "chunks_flushed": 4,
       "parquet_uploaded": true,
@@ -21,7 +21,7 @@
       "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/M5/recent.json"
     },
     "M15": {
-      "candle_count": 100000,
+      "candle_count": 100001,
       "records_ingested": 100000,
       "chunks_flushed": 4,
       "parquet_uploaded": true,
@@ -48,21 +48,31 @@
       "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/H1/recent.json"
     },
     "H4": {
-      "candle_count": 25000,
-      "records_ingested": 25000,
-      "chunks_flushed": 1,
+      "candle_count": 50215,
+      "records_ingested": 50215,
+      "chunks_flushed": 3,
       "parquet_uploaded": true,
       "json_uploaded": true,
       "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/H4/history.parquet",
       "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/H4/recent.json"
     },
     "D1": {
-      "count": 0,
-      "status": "empty"
+      "candle_count": 14353,
+      "records_ingested": 14353,
+      "chunks_flushed": 1,
+      "parquet_uploaded": true,
+      "json_uploaded": true,
+      "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/D1/history.parquet",
+      "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/D1/recent.json"
     },
     "W1": {
-      "count": 0,
-      "status": "empty"
+      "candle_count": 2902,
+      "records_ingested": 2902,
+      "chunks_flushed": 1,
+      "parquet_uploaded": true,
+      "json_uploaded": true,
+      "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/W1/history.parquet",
+      "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/W1/recent.json"
     },
     "MN1": {
       "candle_count": 668,
