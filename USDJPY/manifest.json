@@ -1,59 +1,77 @@
 {
   "symbol": "USDJPY",
-  "last_updated": 1787845815,
+  "last_updated": 1787847245,
   "timeframes": {
     "M1": {
-      "candle_count": 48872,
-      "records_ingested": 50000,
-      "chunks_flushed": 2,
+      "candle_count": 99983,
+      "records_ingested": 100000,
+      "chunks_flushed": 4,
       "parquet_uploaded": true,
       "json_uploaded": true,
       "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/M1/history.parquet",
       "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/M1/recent.json"
     },
     "M5": {
-      "candle_count": 50000,
-      "records_ingested": 50000,
-      "chunks_flushed": 2,
+      "candle_count": 100000,
+      "records_ingested": 100000,
+      "chunks_flushed": 4,
       "parquet_uploaded": true,
       "json_uploaded": true,
       "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/M5/history.parquet",
       "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/M5/recent.json"
     },
     "M15": {
-      "candle_count": 50000,
-      "records_ingested": 50000,
-      "chunks_flushed": 2,
+      "candle_count": 100000,
+      "records_ingested": 100000,
+      "chunks_flushed": 4,
       "parquet_uploaded": true,
       "json_uploaded": true,
       "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/M15/history.parquet",
       "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/M15/recent.json"
     },
     "M30": {
-      "candle_count": 50000,
-      "records_ingested": 50000,
-      "chunks_flushed": 2,
+      "candle_count": 100000,
+      "records_ingested": 100000,
+      "chunks_flushed": 4,
       "parquet_uploaded": true,
       "json_uploaded": true,
       "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/M30/history.parquet",
       "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/M30/recent.json"
     },
     "H1": {
-      "candle_count": 25000,
-      "records_ingested": 25000,
-      "chunks_flushed": 1,
+      "candle_count": 100000,
+      "records_ingested": 100000,
+      "chunks_flushed": 4,
       "parquet_uploaded": true,
       "json_uploaded": true,
       "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/H1/history.parquet",
       "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/H1/recent.json"
     },
     "H4": {
-      "count": 0,
-      "status": "empty"
+      "candle_count": 25000,
+      "records_ingested": 25000,
+      "chunks_flushed": 1,
+      "parquet_uploaded": true,
+      "json_uploaded": true,
+      "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/H4/history.parquet",
+      "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/H4/recent.json"
     },
     "D1": {
       "count": 0,
       "status": "empty"
+    },
+    "W1": {
+      "count": 0,
+      "status": "empty"
+    },
+    "MN1": {
+      "candle_count": 668,
+      "records_ingested": 668,
+      "chunks_flushed": 1,
+      "parquet_uploaded": true,
+      "json_uploaded": true,
+      "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/MN1/history.parquet",
+      "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/USDJPY/MN1/recent.json"
     }
   }
 }
