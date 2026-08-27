@@ -1,59 +1,87 @@
 {
   "symbol": "EURUSD",
-  "last_updated": 1787845528,
+  "last_updated": 1787846763,
   "timeframes": {
     "M1": {
-      "candle_count": 48876,
-      "records_ingested": 50000,
-      "chunks_flushed": 2,
+      "candle_count": 99997,
+      "records_ingested": 100000,
+      "chunks_flushed": 4,
       "parquet_uploaded": true,
       "json_uploaded": true,
       "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/M1/history.parquet",
       "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/M1/recent.json"
     },
     "M5": {
-      "candle_count": 50000,
-      "records_ingested": 50000,
-      "chunks_flushed": 2,
+      "candle_count": 100000,
+      "records_ingested": 100000,
+      "chunks_flushed": 4,
       "parquet_uploaded": true,
       "json_uploaded": true,
       "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/M5/history.parquet",
       "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/M5/recent.json"
     },
     "M15": {
-      "candle_count": 50000,
-      "records_ingested": 50000,
-      "chunks_flushed": 2,
+      "candle_count": 100000,
+      "records_ingested": 100000,
+      "chunks_flushed": 4,
       "parquet_uploaded": true,
       "json_uploaded": true,
       "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/M15/history.parquet",
       "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/M15/recent.json"
     },
     "M30": {
-      "candle_count": 50000,
-      "records_ingested": 50000,
-      "chunks_flushed": 2,
+      "candle_count": 100000,
+      "records_ingested": 100000,
+      "chunks_flushed": 4,
       "parquet_uploaded": true,
       "json_uploaded": true,
       "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/M30/history.parquet",
       "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/M30/recent.json"
     },
     "H1": {
-      "candle_count": 25000,
-      "records_ingested": 25000,
-      "chunks_flushed": 1,
+      "candle_count": 100000,
+      "records_ingested": 100000,
+      "chunks_flushed": 4,
       "parquet_uploaded": true,
       "json_uploaded": true,
       "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/H1/history.parquet",
       "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/H1/recent.json"
     },
     "H4": {
-      "count": 0,
-      "status": "empty"
+      "candle_count": 50222,
+      "records_ingested": 50222,
+      "chunks_flushed": 3,
+      "parquet_uploaded": true,
+      "json_uploaded": true,
+      "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/H4/history.parquet",
+      "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/H4/recent.json"
     },
     "D1": {
-      "count": 0,
-      "status": "empty"
+      "candle_count": 14350,
+      "records_ingested": 14350,
+      "chunks_flushed": 1,
+      "parquet_uploaded": true,
+      "json_uploaded": true,
+      "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/D1/history.parquet",
+      "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/D1/recent.json"
+    },
+    "W1": {
+      "candle_count": 2903,
+      "records_ingested": 2903,
+      "chunks_flushed": 1,
+      "parquet_uploaded": true,
+      "json_uploaded": true,
+      "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/W1/history.parquet",
+      "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/W1/recent.json"
+    },
+    "MN1": {
+      "candle_count": 668,
+      "records_ingested": 668,
+      "chunks_flushed": 1,
+      "parquet_uploaded": true,
+      "json_uploaded": true,
+      "parquet_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/MN1/history.parquet",
+      "json_url": "https://cdn.jsdelivr.net/gh/devffex/dataset@main/EURUSD/MN1/recent.json"
     }
   }
 }
